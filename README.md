@@ -1,2 +1,2 @@
-# -t-i-Web-b-n-gi-y
+# sneakerstore
 bài tập nhóm công nghệ web
