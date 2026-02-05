@@ -1,0 +1,39 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background-color: aqua;
+    border: 4px inset gray;
+    width: 100%;
+    border-radius: 5px;
+}
+.login-edit{
+    text-align: left;
+}
+h2{
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.l-3{
+    text-align: right;
+}
+.l-3 a{
+    text-decoration: none;
+}
+button{
+    width: 100%;
+}
+.child-login-button{
+    position: relative;
+    left: 32%;
+}
+td{
+    padding-bottom: 10px;
+}
