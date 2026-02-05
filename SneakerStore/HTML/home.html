@@ -7,8 +7,50 @@
     <meta name="24640801" content="DuongDanhDung">
     <title>Trang chủ | Sneaker Store</title>
     <link rel="stylesheet" href="../CSS/home.css">
+    <style>
+        body{
+            min-height: 100vh;
+        }
+        form{
+            background-color: aqua;
+            border: 4px inset gray;
+            width: 30%;
+        }
+        .container{
+            margin-top: 5px;
+            display: inline;
+        }
+        .login-edit{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Login-interface -->
+     <div class="container">
+        <form action="">
+            <div class="login-edit">
+                <h2>Login!</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="email-input">Email:</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password-input">Password</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password-input">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+     </div>
 </body>
 </html>
