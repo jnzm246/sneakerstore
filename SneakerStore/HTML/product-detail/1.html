@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product</title>
+<link rel="stylesheet" href="../../CSS/css-product/1.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="header-conainer">
+            <div class="logo">
+                <a href="../home.html"><img src="../../IMG/logo.jpg" alt=""></a>
+            </div>
+        </div>
+    </header>
+  <div class="thantren">
+    <div class="anhtrai">
+      <img src="../../IMG/dep23_SXQS.jpg" alt="Giày tổ ong">
+    </div>
+    <div class="noidungphai">
+      <div class="title">Boost Tổ Ong | Thời Trang Unisex</div>
+      <div class="color">Màu sắc: 09 White</div>
+      <div class="color-box"></div>
+      <div class="size">Kích cỡ: Unisex One Size</div>
+      <div class="size-box">One Size</div>
+      <div class="price">10.000.000 VND</div>
+      <div class="quantity">
+        <button onclick="giam()">-</button>
+        <span id="qty">1</span>
+        <button onclick="tang()">+</button>
+      </div>
+      <button class="btn">THÊM VÀO GIỎ HÀNG</button>
+      <div class="muangay">Mua ngay</div>
+    </div>
+  </div>
+  <div class="thanduoi">
+    <div class="box">
+      <p>
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rerum. Perspiciatis illum dolor esse ut harum. At, corrupti nobis quaerat ullam error obcaecati consectetur, sed soluta iusto sit sunt qui.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="footer-container">
+    
+</div>
+<script>
+let qty = 1;
+function tang(){
+  qty++;
+  document.getElementById("qty").innerText = qty;
+}
+function giam(){
+  if(qty > 1){
+    qty--;
+    document.getElementById("qty").innerText = qty;
+  }
+}
+</script>
+
+</body>
+</html>
