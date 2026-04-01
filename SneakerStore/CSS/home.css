@@ -29,9 +29,12 @@ body{
 .footer-container{
     min-height: 50vh;
     width: 100%;
-    background-color: #420000;
+    background-color: #121212;
 }
-
+.product-1{
+    margin: 20px 20px 0 20px;
+    padding-bottom: 20px;
+}
 .logo img{
     width: 150px;
 }
@@ -48,13 +51,12 @@ body{
 
 .css-slider-wrapper {
     width: 100%;
-    height: 400px;
+    height: 300px;
     overflow: hidden;
     position: relative;
     background-color: #121212; 
 }
 
-/* Băng chuyền chứa tất cả ảnh */
 .css-slider-track {
     display: flex;
     width: 300%; 
