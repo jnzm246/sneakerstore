@@ -13,11 +13,16 @@ body{
     width: 100%;
     background-color: rgb(97, 234, 255);
 }
-
+header{
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
 .header-conainer{
     min-height: 15vh;
     width: 100%;
     background-color: #121212;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
 }
 .nav-ul{
     margin-top: 5px;
@@ -59,6 +64,19 @@ body{
 }
 .logo img{
     width: 170px;
+}
+
+.user-icon img{
+    filter: invert();
+}
+.user-icon a:hover img {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(38%) saturate(2311%) hue-rotate(345deg) brightness(101%) contrast(98%);
+}
+.cart-icon img{
+    filter: invert();
+}
+.cart-icon a:hover img {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(38%) saturate(2311%) hue-rotate(345deg) brightness(101%) contrast(98%);
 }
 
 .card{
