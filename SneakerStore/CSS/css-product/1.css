@@ -7,6 +7,21 @@
       body{
         background:#f4f4f4;
       }
+      
+    .header-conainer{
+        height: 10vh;
+        width: 100%;
+        background-color: #000000;
+    }
+    .footer-container{
+    min-height: 50vh;
+    width: 100%;
+    background-color: #420000;
+    }
+    .logo img{
+    width: 150px;
+    }
+
       .wrapper{
         width:100%;
         margin:0;
