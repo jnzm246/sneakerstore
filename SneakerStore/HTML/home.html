@@ -14,18 +14,115 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="header-conainer">
+            <div class="header-conainer d-flex align-items-center px-4">
                 <div class="logo">
                     <a href="../HTML/home.html"><img src="../IMG/logo.jpg" alt=""></a>
+                </div>
+                <div class="input-group w-25">
+                    <input type="text" class="form-control" placeholder="Nhập từ khóa..">
+                    <button class="btn btn-light border d-flex align-items-center justify-content-center" type="button">
+                    <img style="width: 20px; height: 20px;" src="../IMG/search_icon.jpg" alt="tìm kiếm">
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul class="nav-ul">
+                        <li class="nav-item"><a href="home.html" class="nav-link">Trang chủ</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="stuffs.html">Tất cả sản phẩm</a>
+                            <ul class="dropdown-menu rounded-0">
+                            <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                            <li><a class="dropdown-item" href="#">Nón</a></li>
+                            <li><a class="dropdown-item" href="#">Phụ Kiện</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link">Khuyến Mãi</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Chính sách khách hàng</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Contact US</a></li>
+                    </ul>
                 </div>
             </div>
         </header>
         <div class="container-fluid p-0">
-           <div class="css-slider-wrapper">
+            <div class="css-slider-wrapper">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+
                 <div class="css-slider-track">
-                    <img src="../IMG/download.png" alt="Banner 1">
-                    <img src="../IMG/10.png" alt="Banner 2">
-                    <img src="../IMG/09c.png" alt="Banner 3">
+                    <img src="../IMG/09c.png" alt="News 1">
+                    <img src="../IMG/10.png" alt="News 2">
+                    <img src="../IMG/download.png" alt="News 3">
+                </div>
+
+                <div class="controls controls-1">
+                    <label for="slide3" class="prev">❮</label> <label for="slide2" class="next">❯</label> </div>
+
+                <div class="controls controls-2">
+                    <label for="slide1" class="prev">❮</label> <label for="slide3" class="next">❯</label> </div>
+
+                <div class="controls controls-3">
+                    <label for="slide2" class="prev">❮</label> <label for="slide1" class="next">❯</label> </div>
+            </div>
+            <div class="product-container d-flex justify-content-between">
+                <div class="product-1">
+                    <a href="../HTML/product-detail/1.html" style="text-decoration: none;" class="text-black">
+                        <div class="card" style="width:300px;">
+                            <img class="card-img-top mx-2 mt-2 rounded-bottom-1" src="../IMG/dep23_SXQS.jpg" alt="Giày tổ ong" style="height: 70%; width: 93%;">
+                            <div class="card-body">
+                                <h4 class="card-title" style="font-weight: bold;">Boost tổ ong</h4>
+                                <p class="card-text text-danger text-end" style="font-family:Arial, Helvetica, sans-serif">10.000.000VND</p>
+                                <div class="d-flex justify-content-between gap-2 mt-2">
+                                    <a href="" class="btn btn-dark">Thêm vào giỏ hàng</a>
+                                    <a href="" class="btn btn-light border-black">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-1">
+                    <a href="../HTML/product-detail/1.html" style="text-decoration: none;" class="text-black">
+                        <div class="card" style="width:300px;">
+                            <img class="card-img-top mx-2 mt-2 rounded-bottom-1" src="../IMG/dep23_SXQS.jpg" alt="Giày tổ ong" style="height: 70%; width: 93%;">
+                            <div class="card-body">
+                                <h4 class="card-title" style="font-weight: bold;">Boost tổ ong</h4>
+                                <p class="card-text text-danger text-end" style="font-family:Arial, Helvetica, sans-serif">10.000.000VND</p>
+                                <div class="d-flex justify-content-between gap-2 mt-2">
+                                    <a href="" class="btn btn-dark">Thêm vào giỏ hàng</a>
+                                    <a href="" class="btn btn-light border-black">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-1">
+                    <a href="../HTML/product-detail/1.html" style="text-decoration: none;" class="text-black">
+                        <div class="card" style="width:300px;">
+                            <img class="card-img-top mx-2 mt-2 rounded-bottom-1" src="../IMG/dep23_SXQS.jpg" alt="Giày tổ ong" style="height: 70%; width: 93%;">
+                            <div class="card-body">
+                                <h4 class="card-title" style="font-weight: bold;">Boost tổ ong</h4>
+                                <p class="card-text text-danger text-end" style="font-family:Arial, Helvetica, sans-serif">10.000.000VND</p>
+                                <div class="d-flex justify-content-between gap-2 mt-2">
+                                    <a href="" class="btn btn-dark">Thêm vào giỏ hàng</a>
+                                    <a href="" class="btn btn-light border-black">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-1">
+                    <a href="../HTML/product-detail/1.html" style="text-decoration: none;" class="text-black">
+                        <div class="card" style="width:300px;">
+                            <img class="card-img-top mx-2 mt-2 rounded-bottom-1" src="../IMG/dep23_SXQS.jpg" alt="Giày tổ ong" style="height: 70%; width: 93%;">
+                            <div class="card-body">
+                                <h4 class="card-title" style="font-weight: bold;">Boost tổ ong</h4>
+                                <p class="card-text text-danger text-end" style="font-family:Arial, Helvetica, sans-serif">10.000.000VND</p>
+                                <div class="d-flex justify-content-between gap-2 mt-2">
+                                    <a href="" class="btn btn-dark">Thêm vào giỏ hàng</a>
+                                    <a href="" class="btn btn-light border-black">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="product-container d-flex justify-content-between">
@@ -37,8 +134,8 @@
                                 <h4 class="card-title" style="font-weight: bold;">Boost tổ ong</h4>
                                 <p class="card-text text-danger text-end" style="font-family:Arial, Helvetica, sans-serif">10.000.000VND</p>
                                 <div class="d-flex justify-content-between gap-2 mt-2">
-                                    <a href="" class="btn btn-primary">Thêm vào giỏ hàng</a>
-                                    <a href="" class="btn btn-primary">Mua ngay</a>
+                                    <a href="" class="btn btn-dark">Thêm vào giỏ hàng</a>
+                                    <a href="" class="btn btn-light border-black">Mua ngay</a>
                                 </div>
                             </div>
                         </div>
@@ -52,8 +149,8 @@
                                 <h4 class="card-title" style="font-weight: bold;">Boost tổ ong</h4>
                                 <p class="card-text text-danger text-end" style="font-family:Arial, Helvetica, sans-serif">10.000.000VND</p>
                                 <div class="d-flex justify-content-between gap-2 mt-2">
-                                    <a href="" class="btn btn-primary">Thêm vào giỏ hàng</a>
-                                    <a href="" class="btn btn-primary">Mua ngay</a>
+                                    <a href="" class="btn btn-dark">Thêm vào giỏ hàng</a>
+                                    <a href="" class="btn btn-light border-black">Mua ngay</a>
                                 </div>
                             </div>
                         </div>
@@ -67,8 +164,8 @@
                                 <h4 class="card-title" style="font-weight: bold;">Boost tổ ong</h4>
                                 <p class="card-text text-danger text-end" style="font-family:Arial, Helvetica, sans-serif">10.000.000VND</p>
                                 <div class="d-flex justify-content-between gap-2 mt-2">
-                                    <a href="" class="btn btn-primary">Thêm vào giỏ hàng</a>
-                                    <a href="" class="btn btn-primary">Mua ngay</a>
+                                    <a href="" class="btn btn-dark">Thêm vào giỏ hàng</a>
+                                    <a href="" class="btn btn-light border-black">Mua ngay</a>
                                 </div>
                             </div>
                         </div>
@@ -82,8 +179,8 @@
                                 <h4 class="card-title" style="font-weight: bold;">Boost tổ ong</h4>
                                 <p class="card-text text-danger text-end" style="font-family:Arial, Helvetica, sans-serif">10.000.000VND</p>
                                 <div class="d-flex justify-content-between gap-2 mt-2">
-                                    <a href="" class="btn btn-primary">Thêm vào giỏ hàng</a>
-                                    <a href="" class="btn btn-primary">Mua ngay</a>
+                                    <a href="" class="btn btn-dark">Thêm vào giỏ hàng</a>
+                                    <a href="" class="btn btn-light border-black">Mua ngay</a>
                                 </div>
                             </div>
                         </div>
