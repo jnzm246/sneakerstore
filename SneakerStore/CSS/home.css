@@ -219,3 +219,30 @@ header{
 .social-3d li:nth-child(4) a:hover { background: linear-gradient(#f9ce34,#ee2a7b,#6228d7); }
 .social-3d li:nth-child(4) a:hover::before { background: #ee2a7b; }
 .social-3d li:nth-child(4) a:hover::after { background: #6228d7; }
+
+
+.btn-view-all {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: #121212;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid #121212;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-view-all:hover {
+    background-color: #ffa229; 
+    color: #121212;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(255, 162, 41, 0.4);
+}
+
+.btn-view-all:hover i {
+    color: #121212;
+}
