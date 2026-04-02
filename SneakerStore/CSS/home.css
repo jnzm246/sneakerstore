@@ -89,108 +89,25 @@ header{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.css-slider-wrapper {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    background-color: #121212; 
-}
-
-.css-slider-track {
-    display: flex;
-    width: 300%; 
-    height: 100%;
-  
-    animation: slideAuto 12s infinite; 
+.carousel-control-prev {
+    justify-content: flex-start !important; 
+    padding-left: 20px;
 }
 
 
-.css-slider-track img {
-    width: 33.3333%;
-    height: 100%;
-    object-fit: cover;
+.carousel-control-next {
+    justify-content: flex-end !important;
+    padding-right: 20px; 
 }
 
 
-@keyframes slideAuto {
-    0%, 25% { 
-        transform: translateX(0); 
-    }
-    33%, 58% { 
-        transform: translateX(-33.3333%); 
-    }
-
-    66%, 91% { 
-        transform: translateX(-66.6666%); 
-    }
-    100% { 
-        transform: translateX(0); 
-    }
-}
-.css-slider-wrapper {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    background-color: #121212;
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 8% !important; 
+    opacity: 0.8 !important;
 }
 
-.css-slider-wrapper input[type="radio"] {
-    display: none;
-}
-
-.css-slider-track {
-    display: flex;
-    width: 300%;
-    height: 100%;
-    transition: transform 0.6s ease-in-out; 
-}
-
-.css-slider-track img {
-    width: 33.3333%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-#slide1:checked ~ .css-slider-track { transform: translateX(0%); }
-
-
-#slide2:checked ~ .css-slider-track { transform: translateX(-33.3333%); }
-
-#slide3:checked ~ .css-slider-track { transform: translateX(-66.6666%); }
-
-.controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: none;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    padding: 0 20px;
-    pointer-events: none;
-}
-
-.controls label {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    padding: 10px 18px;
-    border-radius: 50%;
-    font-size: 24px;
-    font-weight: bold;
-    pointer-events: auto; 
-    transition: background-color 0.3s;
-    user-select: none;
-}
-
-.controls label:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-#slide1:checked ~ .controls-1,
-#slide2:checked ~ .controls-2,
-#slide3:checked ~ .controls-3 {
-    display: flex;
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    opacity: 1 !important;
 }

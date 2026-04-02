@@ -64,25 +64,38 @@
             </div>
         </header>
         <div class="container-fluid p-0">
-            <div class="css-slider-wrapper">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
+            <div id="bannerSneaker" class="carousel slide mb-5" data-bs-ride="carousel" style="height: 400px;">
+    
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bannerSneaker" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#bannerSneaker" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#bannerSneaker" data-bs-slide-to="2"></button>
+            </div>
 
-                <div class="css-slider-track">
-                    <img src="../IMG/09c.png" alt="News 1">
-                    <img src="../IMG/10.png" alt="News 2">
-                    <img src="../IMG/download.png" alt="News 3">
+                <div class="carousel-inner h-100">
+                    
+                    <div class="carousel-item active h-100" data-bs-interval="3000"> <img src="../IMG/09c.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Banner 1">
+                    </div>
+                    
+                    <div class="carousel-item h-100" data-bs-interval="3000">
+                        <img src="../IMG/10.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Banner 2">
+                    </div>
+                    
+                    <div class="carousel-item h-100" data-bs-interval="3000">
+                        <img src="../IMG/download.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Banner 3">
+                    </div>
+
                 </div>
 
-                <div class="controls controls-1">
-                    <label for="slide3" class="prev">❮</label> <label for="slide2" class="next">❯</label> </div>
-
-                <div class="controls controls-2">
-                    <label for="slide1" class="prev">❮</label> <label for="slide3" class="next">❯</label> </div>
-
-                <div class="controls controls-3">
-                    <label for="slide2" class="prev">❮</label> <label for="slide1" class="next">❯</label> </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#bannerSneaker" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                
+                <button class="carousel-control-next" type="button" data-bs-target="#bannerSneaker" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
             <div class="product-container d-flex justify-content-between">
                 <div class="product-1">
