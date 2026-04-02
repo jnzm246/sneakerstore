@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/bootstrap.css">
     <link rel="stylesheet" href="../CSS/home.css">
     <script src="../JS/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="wrapper">
@@ -64,25 +65,38 @@
             </div>
         </header>
         <div class="container-fluid p-0">
-            <div class="css-slider-wrapper">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
+            <div id="bannerSneaker" class="carousel slide mb-5" data-bs-ride="carousel" style="height: 400px;">
+    
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bannerSneaker" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#bannerSneaker" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#bannerSneaker" data-bs-slide-to="2"></button>
+            </div>
 
-                <div class="css-slider-track">
-                    <img src="../IMG/09c.png" alt="News 1">
-                    <img src="../IMG/10.png" alt="News 2">
-                    <img src="../IMG/download.png" alt="News 3">
+                <div class="carousel-inner h-100">
+                    
+                    <div class="carousel-item active h-100" data-bs-interval="3000"> <img src="../IMG/09c.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Banner 1">
+                    </div>
+                    
+                    <div class="carousel-item h-100" data-bs-interval="3000">
+                        <img src="../IMG/10.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Banner 2">
+                    </div>
+                    
+                    <div class="carousel-item h-100" data-bs-interval="3000">
+                        <img src="../IMG/download.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Banner 3">
+                    </div>
+
                 </div>
 
-                <div class="controls controls-1">
-                    <label for="slide3" class="prev">❮</label> <label for="slide2" class="next">❯</label> </div>
-
-                <div class="controls controls-2">
-                    <label for="slide1" class="prev">❮</label> <label for="slide3" class="next">❯</label> </div>
-
-                <div class="controls controls-3">
-                    <label for="slide2" class="prev">❮</label> <label for="slide1" class="next">❯</label> </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#bannerSneaker" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                
+                <button class="carousel-control-next" type="button" data-bs-target="#bannerSneaker" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
             <div class="product-container d-flex justify-content-between">
                 <div class="product-1">
@@ -206,15 +220,88 @@
                             </div>
                         </div>
                     </a>
+                </div>
+            </div>
+                <div class="text-center mt-5 mb-5 pb-4">
+                    <a href="stuffs.html" class="btn-view-all">
+                        Xem tất cả sản phẩm <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+    <footer>
+        <div class="footer-container pt-5 pb-3">
+            
+            <div class="container text-light">
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 text-white">Giới thiệu</h5>
+                        <p class="text-white-50" style="font-size: 14px; text-align: justify;">
+                            Sneaker Store là một trong những cửa hàng về sneakers chính hãng tại Việt Nam nói chung và Sài Gòn nói riêng. Qua nhiều năm phát triển và tạo dựng uy tín, bên cạnh mặt hàng sneaker thì Sneaker Store ngày nay còn phân phối nhiều mặt hàng chính hãng khác như mũ, phụ kiện.
+                        </p>
+                        <p class="fw-bold mb-1 text-white-50" style="font-size: 14px;">Đăng ký Hộ Kinh Doanh số 12345678, cấp bởi UBND Q. Gò Vấp</p>
+                        <p class="fw-bold mb-1 text-white-50" style="font-size: 14px;">Mã số thuế: 8077675962-001</p>
+                        <p class="fw-bold mb-1 text-white-50" style="font-size: 14px;">Địa chỉ: Số 4 Nguyễn Văn Bảo, Phường 1, Quận Gò Vấp, TP. HCM</p>
+                        <p class="fw-bold mb-3 text-white-50" style="font-size: 14px;">Làm việc từ: 8h đến 23h</p>
+                        <a href="http://online.gov.vn/Home/WebDetails/120285"><img src="../IMG/logo-da-thong-bao-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" style="width: 150px;"></a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 text-white">Liên kết</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Facebook Sneaker Store</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Facebook IUH</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Instagram Sneaker Store</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Instagram IUH</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Chính sách bảo mật</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Điều khoản dịch vụ</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Chính sách bảo hành đổi trả & hoàn tiền</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Chính sách mua hàng</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Chính sách giao hàng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 text-white">Thông tin liên hệ</h5>
+                        <ul class="list-unstyled text-white-50" style="font-size: 14px;">
+                            <li class="mb-3 d-flex align-items-start">
+                                <span class="me-2 text-white">📍</span> 
+                                <span>Số 4 Nguyễn Văn Bảo, Phường 1, Quận Gò Vấp, TP. HCM</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <span class="me-2 text-white">📞</span> 
+                                <span>18001122</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <span class="me-2 text-white">✉️</span> 
+                                <span>sneakerstore@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 text-white">Gặp gỡ SneakSter ở</h5>
+                        <ul class="social-3d">
+                            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a></li>
+                            <li><a href="https://x.com/"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
+                            <li><a href="https://www.google.com/"><i class="fa-brands fa-google"></i><span>Google</span></a></li>
+                            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 pt-4 border-top border-secondary">
+                    <div class="col-12 text-center text-white-50" style="font-size: 14px;">
+                        Copyright © 2026 Sneaker Store.
+                    </div>
                 </div>
             </div>
             
         </div>
-        <footer>
-            <div class="footer-container">
-
-            </div>
-        </footer>
+    </footer>
     </div>
 </body>
 </html>

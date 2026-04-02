@@ -58,6 +58,15 @@ header{
     width: 100%;
     background-color: #121212;
 }
+
+.footer-links a {
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #ffa229 !important; 
+}
 .product-1{
     margin: 20px 20px 0 20px;
     padding-bottom: 20px;
@@ -89,108 +98,151 @@ header{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.css-slider-wrapper {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    background-color: #121212; 
+.carousel-control-prev {
+    justify-content: flex-start !important; 
+    padding-left: 20px;
 }
 
-.css-slider-track {
+
+.carousel-control-next {
+    justify-content: flex-end !important;
+    padding-right: 20px; 
+}
+
+
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 8% !important; 
+    opacity: 0.8 !important;
+}
+
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    opacity: 1 !important;
+}
+
+.social-3d {
     display: flex;
-    width: 300%; 
-    height: 100%;
-  
-    animation: slideAuto 12s infinite; 
+    flex-direction: column; 
+    gap: 25px; 
+    padding: 10px 0 0 15px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.social-3d li {
+    list-style: none;
+    margin: 0;
 }
 
 
-.css-slider-track img {
-    width: 33.3333%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-@keyframes slideAuto {
-    0%, 25% { 
-        transform: translateX(0); 
-    }
-    33%, 58% { 
-        transform: translateX(-33.3333%); 
-    }
-
-    66%, 91% { 
-        transform: translateX(-66.6666%); 
-    }
-    100% { 
-        transform: translateX(0); 
-    }
-}
-.css-slider-wrapper {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
+.social-3d li a {
     position: relative;
-    background-color: #121212;
+    text-decoration: none;
+    display: block;
+    width: 150px; 
+    height: 45px; 
+    background: #fff;
+    padding-left: 15px;
+    transform: rotate(-15deg) skew(20deg) translate(0,0); /* Giảm độ nghiêng cho dễ nhìn */
+    transition: 0.5s;
+    box-shadow: -10px 10px 10px rgba(0,0,0,0.3);
 }
 
-.css-slider-wrapper input[type="radio"] {
-    display: none;
+.social-3d li .fa-brands {
+    font-size: 20px;
+    color: #262626;
+    line-height: 45px;
+    transition: 0.5s;
+    padding-right: 15px;
 }
 
-.css-slider-track {
-    display: flex;
-    width: 300%;
-    height: 100%;
-    transition: transform 0.6s ease-in-out; 
-}
-
-.css-slider-track img {
-    width: 33.3333%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-#slide1:checked ~ .css-slider-track { transform: translateX(0%); }
-
-
-#slide2:checked ~ .css-slider-track { transform: translateX(-33.3333%); }
-
-#slide3:checked ~ .css-slider-track { transform: translateX(-66.6666%); }
-
-.controls {
+.social-3d li a span {
     position: absolute;
-    top: 50%;
+    top: 13px;
+    color: #262626;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+
+.social-3d li a::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    height: 100%;
+    width: 10px;
+    background-color: #b1b1b1;
+    transition: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.social-3d li a::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    height: 10px;
     width: 100%;
-    display: none;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    padding: 0 20px;
-    pointer-events: none;
+    background: #888;
+    transition: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
 }
 
-.controls label {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    padding: 10px 18px;
-    border-radius: 50%;
-    font-size: 24px;
+
+.social-3d li a:hover {
+    transform: rotate(-15deg) skew(20deg) translate(15px, -10px);
+    box-shadow: -20px 20px 20px rgba(255, 255, 255, 0.1);
+}
+
+.social-3d li:hover .fa-brands,
+.social-3d li:hover a span {
+    color: #fff;
+}
+
+
+.social-3d li:nth-child(1) a:hover { background: #3b5998; }
+.social-3d li:nth-child(1) a:hover::before { background: #2f477a; }
+.social-3d li:nth-child(1) a:hover::after { background: #4a69ad; }
+
+
+.social-3d li:nth-child(2) a:hover { background: black; }
+.social-3d li:nth-child(2) a:hover::before { background: #222; }
+.social-3d li:nth-child(2) a:hover::after { background: #333; }
+
+
+.social-3d li:nth-child(3) a:hover { background: linear-gradient(-45deg,#ff3939,#FBBC05); }
+.social-3d li:nth-child(3) a:hover::before { background: #35ea35; }
+.social-3d li:nth-child(3) a:hover::after { background: #4285F4; }
+
+.social-3d li:nth-child(4) a:hover { background: linear-gradient(#f9ce34,#ee2a7b,#6228d7); }
+.social-3d li:nth-child(4) a:hover::before { background: #ee2a7b; }
+.social-3d li:nth-child(4) a:hover::after { background: #6228d7; }
+
+
+.btn-view-all {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: #121212;
+    color: #ffffff;
+    text-decoration: none;
     font-weight: bold;
-    pointer-events: auto; 
-    transition: background-color 0.3s;
-    user-select: none;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid #121212;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.controls label:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+
+.btn-view-all:hover {
+    background-color: #ffa229; 
+    color: #121212;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(255, 162, 41, 0.4);
 }
 
-#slide1:checked ~ .controls-1,
-#slide2:checked ~ .controls-2,
-#slide3:checked ~ .controls-3 {
-    display: flex;
+.btn-view-all:hover i {
+    color: #121212;
 }
