@@ -1,24 +1,24 @@
-     const fullname = document.getElementById('fullname');
-        
-        // Quy tắc: Viết hoa chữ cái đầu mỗi từ, ít nhất 2 từ
-        const fullnameRegex = /^[A-ZÀ-Ỹ][a-zA-ZÀ-ỹ]*(\s+[A-ZÀ-Ỹ][a-zA-ZÀ-ỹ]*)+$/;
+const btnLogin = document.getElementById('btn-login');
 
-        fullname.addEventListener('input', () => {
-        let value = fullname.value.trim();
+if (btnLogin) {
+    btnLogin.addEventListener('click', (event) => {
+        event.preventDefault(); 
 
-        // Nếu ô input trống
-        if (value === "") {
-            fullname.style.borderColor = '#444'; 
-            fullname.style.boxShadow = 'none';   
+        const inputEmail = document.getElementById('login-email').value.trim();
+        const inputPassword = document.getElementById('login-password').value.trim();
+
+        const savedEmail = localStorage.getItem('userEmail');
+        const savedPassword = localStorage.getItem('userPassword');
+
+        if (inputEmail === "" || inputPassword === "") {
+            alert("Vui lòng nhập Email và Mật khẩu!");
         } 
-        // Nếu nhập ĐÚNG định dạng
-        else if (fullnameRegex.test(value)) {
-            fullname.style.borderColor = '#22c55e'; // Viền Xanh lá
-            fullname.style.boxShadow = '0 0 8px rgba(34, 197, 94, 0.5)'; // Bóng Xanh lá
+        else if (inputEmail === savedEmail && inputPassword === savedPassword) {
+            alert("Đăng nhập thành công!");
+            window.location.href = "../home.html"; 
         } 
-        // Nếu nhập SAI định dạng
         else {
-            fullname.style.borderColor = '#ef4444'; // Viền Đỏ
-            fullname.style.boxShadow = '0 0 8px rgba(239, 68, 68, 0.5)'; // Bóng Đỏ
+            alert("Email hoặc Mật khẩu không chính xác"); 
         }
-        });
+    });
+}
