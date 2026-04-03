@@ -1,64 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product</title>
-<link rel="stylesheet" href="../../CSS/css-product/1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="24743951" content="LeAnhDung">
+    <meta name="24640801" content="DuongDanhDung">
+    <meta name="24635661" content="TranHoangLong">
+    <title>Boost Tổ Ong | Sneaker Store</title>
+    <link rel="stylesheet" href="../../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../../CSS/home.css"> 
+    <link rel="stylesheet" href="../../CSS/css-product/1.css">
+    <script src="../../JS/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-<div class="wrapper">
-    <header>
-        <div class="header-conainer">
-            <div class="logo">
-                <a href="../home.html"><img src="../../IMG/logo.jpg" alt=""></a>
+    <div class="wrapper">
+        <header>
+            <div class="header-conainer d-flex align-items-center px-4">
+                <div class="logo">
+                    <a href="../home.html"><img src="../../IMG/logo.jpg" alt="Logo"></a>
+                </div>
+                <div class="input-group w-25">
+                    <input type="text" class="form-control" placeholder="Nhập từ khóa..">
+                    <button class="btn btn-light border d-flex align-items-center justify-content-center" type="button">
+                        <img style="width: 20px; height: 20px;" src="../../IMG/search_icon.jpg" alt="tìm kiếm">
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul class="nav-ul">
+                        <li class="nav-item"><a href="../home.html" class="nav-link">Trang chủ</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="../stuffs.html" style="color: #ffa229;">Tất cả sản phẩm</a>
+                            <ul class="dropdown-menu rounded-0">
+                                <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                                <li><a class="dropdown-item" href="#">Nón</a></li>
+                                <li><a class="dropdown-item" href="#">Phụ Kiện</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link">Khuyến Mãi</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Chính sách khách hàng</a></li>
+                        <li class="nav-item"><a href="../../HTML/About_us.html" class="nav-link">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="action-icons d-flex align-items-center gap-4 ms-auto pb-3">
+                    <div class="user-icon">
+                        <a href="../Login_UI/Login_interface.html" class="position-relative d-inline-block mt-2">
+                            <img style="width: 35px; height: 35px;" src="../../IMG/user.png" alt="tài khoản">
+                        </a>
+                    </div>
+                    <div class="cart-icon">
+                        <a href="../cart.html" class="position-relative d-inline-block mt-2">
+                            <img style="width: 35px; height: 35px;" src="../../IMG/shopping-cart.png" alt="Giỏ hàng">
+                            <span id="cart-dot" class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle d-none">
+                                <span class="visually-hidden">Có sản phẩm mới</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid bg-white py-5" style="min-height: 80vh;">
+            <div class="container">
+                
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../home.html" class="text-decoration-none text-muted">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="../stuffs.html" class="text-decoration-none text-muted">Tất cả sản phẩm</a></li>
+                        <li class="breadcrumb-item active fw-bold text-dark" aria-current="page">Boost Tổ Ong</li>
+                    </ol>
+                </nav>
+
+                <div class="row gx-5">
+                    <div class="col-lg-6 mb-4">
+                        <div class="product-img-box shadow-sm rounded-3 overflow-hidden text-center bg-light">
+                            <img src="../../IMG/dep23_SXQS.jpg" alt="Giày tổ ong" class="img-fluid w-100" style="object-fit: cover; max-height: 500px;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-2">Boost Tổ Ong | Thời Trang Unisex</h2>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="text-warning fs-5 me-2">★★★★★</span>
+                            <span class="text-muted">(128 Đánh giá)</span>
+                        </div>
+                        <h3 class="text-danger fw-bold mb-4">10.000.000 VND</h3>
+
+                        <div class="mb-4">
+                            <p class="mb-2 fw-bold">Màu sắc: <span id="color-name" class="fw-normal">09 White</span></p>
+                            <div class="d-flex gap-2">
+                                <div class="color-box active" style="background-color: #ffffff;" data-color="09 White"></div>
+                                <div class="color-box" style="background-color: #000000;" data-color="Black"></div>
+                                <div class="color-box" style="background-color: #ffa229;" data-color="Orange"></div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="mb-2 fw-bold">Kích cỡ: <span class="fw-normal">Unisex</span></p>
+                            <div class="d-flex gap-3">
+                                <div class="size-box active">One Size</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="mb-2 fw-bold">Số lượng:</p>
+                            <div class="input-group" style="width: 140px;">
+                                <button class="btn btn-outline-secondary btn-qty" type="button" id="btn-minus">-</button>
+                                <input type="text" class="form-control text-center fw-bold" id="qty-input" value="1" readonly>
+                                <button class="btn btn-outline-secondary btn-qty" type="button" id="btn-plus">+</button>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-3 mt-5">
+                            <button class="btn-add-to-cart flex-grow-1 border-0 rounded-2" id="add-to-cart-btn">
+                                <i class="fa-solid fa-cart-plus me-2"></i> THÊM VÀO GIỎ HÀNG
+                            </button>
+                            <a href="../cart.html" class="btn-buy-now text-decoration-none text-center rounded-2" style="width: 30%;">
+                                MUA NGAY
+                            </a>
+                        </div>
+                        
+                        <div class="mt-4 pt-3 border-top text-muted" style="font-size: 14px;">
+                            <p class="mb-1"><i class="fa-solid fa-check text-success me-2"></i> Cam kết chính hãng 100%</p>
+                            <p class="mb-1"><i class="fa-solid fa-truck-fast text-primary me-2"></i> Giao hàng hỏa tốc trong 2h</p>
+                            <p class="mb-0"><i class="fa-solid fa-rotate-left text-danger me-2"></i> Đổi trả miễn phí trong 7 ngày</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h4 class="fw-bold mb-3 border-bottom pb-2">Mô tả sản phẩm</h4>
+                        <div class="description-box">
+                            <p>
+                                Siêu phẩm <strong>Boost Tổ Ong</strong> là sự kết hợp hoàn hảo giữa công nghệ đế giày êm ái bậc nhất và thiết kế lỗ tổ ong thông thoáng, mang lại cảm giác thoải mái tuyệt đối cho đôi chân của bạn suốt cả ngày dài.
+                            </p>
+                            <p>
+                               Thiết kế Unisex phù hợp cho cả nam và nữ, dễ dàng phối hợp với mọi phong cách thời trang từ dạo phố đến tập luyện thể thao.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </header>
-  <div class="thantren">
-    <div class="anhtrai">
-      <img src="../../IMG/dep23_SXQS.jpg" alt="Giày tổ ong">
-    </div>
-    <div class="noidungphai">
-      <div class="title">Boost Tổ Ong | Thời Trang Unisex</div>
-      <div class="color">Màu sắc: 09 White</div>
-      <div class="color-box"></div>
-      <div class="size">Kích cỡ: Unisex One Size</div>
-      <div class="size-box">One Size</div>
-      <div class="price">10.000.000 VND</div>
-      <div class="quantity">
-        <button onclick="giam()">-</button>
-        <span id="qty">1</span>
-        <button onclick="tang()">+</button>
-      </div>
-      <button class="btn">THÊM VÀO GIỎ HÀNG</button>
-      <div class="muangay">Mua ngay</div>
-    </div>
-  </div>
-  <div class="thanduoi">
-    <div class="box">
-      <p>
-       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rerum. Perspiciatis illum dolor esse ut harum. At, corrupti nobis quaerat ullam error obcaecati consectetur, sed soluta iusto sit sunt qui.
-      </p>
-    </div>
-  </div>
-</div>
-<div class="footer-container">
-    
-</div>
-<script>
-let qty = 1;
-function tang(){
-  qty++;
-  document.getElementById("qty").innerText = qty;
-}
-function giam(){
-  if(qty > 1){
-    qty--;
-    document.getElementById("qty").innerText = qty;
-  }
-}
-</script>
 
+        <footer>
+        <div class="footer-container pt-5 pb-3">
+            
+            <div class="container text-light">
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 text-white">Giới thiệu</h5>
+                        <p class="text-white-50" style="font-size: 14px; text-align: justify;">
+                            Sneaker Store là một trong những cửa hàng về sneakers chính hãng tại Việt Nam nói chung và Sài Gòn nói riêng. Qua nhiều năm phát triển và tạo dựng uy tín, bên cạnh mặt hàng sneaker thì Sneaker Store ngày nay còn phân phối nhiều mặt hàng chính hãng khác như mũ, phụ kiện.
+                        </p>
+                        <p class="fw-bold mb-1 text-white-50" style="font-size: 14px;">Đăng ký Hộ Kinh Doanh số 12345678, cấp bởi UBND Q. Gò Vấp</p>
+                        <p class="fw-bold mb-1 text-white-50" style="font-size: 14px;">Mã số thuế: 8077675962-001</p>
+                        <p class="fw-bold mb-1 text-white-50" style="font-size: 14px;">Địa chỉ: Số 4 Nguyễn Văn Bảo, Phường 1, Quận Gò Vấp, TP. HCM</p>
+                        <p class="fw-bold mb-3 text-white-50" style="font-size: 14px;">Làm việc từ: 8h đến 23h</p>
+                        <a href="http://online.gov.vn/Home/WebDetails/120285"><img src="../../IMG/logo-da-thong-bao-bo-cong-thuong.webp" alt="Đã thông báo Bộ Công Thương" style="width: 150px;"></a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 text-white">Liên kết</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Facebook Sneaker Store</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Facebook IUH</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Instagram Sneaker Store</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Chính sách bảo mật</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Điều khoản dịch vụ</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Chính sách bảo hành đổi trả & hoàn tiền</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Chính sách mua hàng</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Chính sách giao hàng</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Về chúng tôi</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 text-white">Thông tin liên hệ</h5>
+                        <ul class="list-unstyled text-white-50" style="font-size: 14px;">
+                            <li class="mb-3 d-flex align-items-start">
+                                <span class="me-2 text-white">📍</span> 
+                                <span>Số 4 Nguyễn Văn Bảo, Phường 1, Quận Gò Vấp, TP. HCM</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <span class="me-2 text-white">📞</span> 
+                                <span>18001122</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <span class="me-2 text-white">✉️</span> 
+                                <span>sneakerstore@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 text-white">Gặp gỡ SneakSter ở</h5>
+                        <ul class="social-3d">
+                            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a></li>
+                            <li><a href="https://x.com/"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
+                            <li><a href="https://www.google.com/"><i class="fa-brands fa-google"></i><span>Google</span></a></li>
+                            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 pt-4 border-top border-secondary">
+                    <div class="col-12 text-center text-white-50" style="font-size: 14px;">
+                        Copyright © 2026 Sneaker Store.
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1055;">
+        <div id="cartToast" class="toast align-items-center text-white bg-dark border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <span class="text-success fs-5 me-2">✔</span> Đã thêm <strong id="toast-qty">1</strong> sản phẩm vào giỏ hàng!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const qtyInput = document.getElementById('qty-input');
+            document.getElementById('btn-plus').addEventListener('click', () => {
+                qtyInput.value = parseInt(qtyInput.value) + 1;
+            });
+            document.getElementById('btn-minus').addEventListener('click', () => {
+                if (parseInt(qtyInput.value) > 1) {
+                    qtyInput.value = parseInt(qtyInput.value) - 1;
+                }
+            });
+            const colorBoxes = document.querySelectorAll('.color-box');
+            const colorNameDisplay = document.getElementById('color-name');
+            colorBoxes.forEach(box => {
+                box.addEventListener('click', function() {
+                    colorBoxes.forEach(cb => cb.classList.remove('active'));
+                    this.classList.add('active'); 
+                    colorNameDisplay.innerText = this.getAttribute('data-color'); 
+                });
+            });
+
+            const addToCartBtn = document.getElementById('add-to-cart-btn');
+            const cartDot = document.getElementById('cart-dot');
+            const toastElement = document.getElementById('cartToast');
+            const cartToast = new bootstrap.Toast(toastElement, { delay: 2500 });
+            const cartIconImage = document.querySelector('.cart-icon img');
+
+            addToCartBtn.addEventListener('click', function(e) {
+                e.preventDefault(); 
+                
+                document.getElementById('toast-qty').innerText = qtyInput.value;
+
+                cartDot.classList.remove('d-none');
+
+                if(cartIconImage) {
+                    cartIconImage.classList.add('shake-anim');
+                    setTimeout(() => cartIconImage.classList.remove('shake-anim'), 500);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
